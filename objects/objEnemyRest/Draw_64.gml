@@ -1,5 +1,12 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
+var _Enemys = string;
+
+if global.inimigosNumber >= 2 {
+	_Enemys = " Inimigos";
+} else {
+	_Enemys = " Inimigo";
+}
 
 if global.configOS == 0 || global.configOS == 1 {
 	var _cx = camera_get_view_x(view_camera[0]);
@@ -11,12 +18,5 @@ if global.configOS == 0 || global.configOS == 1 {
 }
 draw_set_font(fnTextos);
 draw_set_alpha(alpha);
-var _Enemys = string;
-if global.inimigosNumber >= 2 {
-	_Enemys = " Inimigos";
-} else {
-	_Enemys = " Inimigo";
-}
-
 draw_set_alpha(1);
 draw_set_color(c_white);

@@ -66,7 +66,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.6.0.89",
+    "IDEVersion": "2023.6.0.92",
   },
   "resources": [
     {"id":{"name":"Terrain__32x32_TESTE108","path":"sprites/Terrain__32x32_TESTE108/Terrain__32x32_TESTE108.yy",},},
