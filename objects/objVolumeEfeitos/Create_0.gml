@@ -1,6 +1,6 @@
 /// @description Variaveis AQUI !!
 
-
+value = "";
 maxValue = 1;
 selected = false;
 

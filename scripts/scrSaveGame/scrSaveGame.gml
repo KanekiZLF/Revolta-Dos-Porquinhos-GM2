@@ -78,6 +78,7 @@ function scrSaveGame() {
 }
 
 function scrLoadSave() {
+	var _buffer = "";
 	audio_stop_sound(sndBoom);
 	audio_stop_sound(sndBoxBroken);
 	audio_stop_sound(sndWick);
@@ -88,21 +89,21 @@ function scrLoadSave() {
 
 //Carregando o Save do Jogo
 	if (file_exists("saved1.save") || (file_exists("saved2.save")) || (file_exists("saved3.save"))) {
-
+	
 	if global.save1 {
-		var _buffer = buffer_load("saved1.save");
+		_buffer = buffer_load("saved1.save");
 		global.save2 = false;
 		global.save3 = false;
 	}
 	
 	if global.save2 {
-		var _buffer = buffer_load("saved2.save");
+		_buffer = buffer_load("saved2.save");
 		global.save1 = false;
 		global.save3 = false;
 	}
 	
 	if global.save3 {
-		var _buffer = buffer_load("saved3.save");
+		_buffer = buffer_load("saved3.save");
 		global.save1 = false;
 		global.save2 = false;
 	}

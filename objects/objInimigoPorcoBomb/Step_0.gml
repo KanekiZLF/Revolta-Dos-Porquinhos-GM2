@@ -64,6 +64,6 @@ if hitSound {
 }
 
 if podeAtacar {
-	alarm[2] = 2 * room_speed;
+	alarm[2] = 2 * game_get_speed(gamespeed_fps); 
 	podeAtacar = false;
 }

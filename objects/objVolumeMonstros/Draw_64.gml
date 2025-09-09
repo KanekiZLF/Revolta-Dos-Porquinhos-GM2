@@ -7,11 +7,10 @@ if global.options {
 	draw_set_font(fnTextoSliders);
 	draw_set_color(c_white);
 	draw_set_halign(fa_center);
-	draw_set_valign(fa_center);
+	draw_set_valign(fa_middle);
 	draw_text_transformed(x+sprite_width + 15, y+1, floor(value * 100), .25, .25, 1);
 	draw_text_transformed(x - 22, y, "Ambiente", .3, .3, 1);
 	draw_set_color(c_white); // <-- Reseta a cor
-	draw_set_font(c_white); // <-- Reseta a fonte
-	draw_set_halign(fa_none); // <-- Reseta o alinhamento HORIZONTAL
-	draw_set_valign(fa_none); // <-- Reseta o alinhamento VERTICAL
+	draw_set_halign(fa_right); // <-- Reseta o alinhamento HORIZONTAL
+	draw_set_valign(fa_top); // <-- Reseta o alinhamento VERTICAL
 }

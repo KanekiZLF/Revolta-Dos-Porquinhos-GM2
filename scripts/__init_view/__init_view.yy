@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "__init_view",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "scrConfiguracoes",
-    "path": "folders/Scripts/scrConfiguracoes.yy",
+  "$GMScript":"v1",
+  "%Name":"__init_view",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__init_view",
+  "parent":{
+    "name":"scrConfiguracoes",
+    "path":"folders/Scripts/scrConfiguracoes.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

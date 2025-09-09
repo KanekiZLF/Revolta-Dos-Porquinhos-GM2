@@ -41,7 +41,7 @@ if dir {
 }
 
 if place_meeting(x, y + 1, objColisParede) && !dir {
-	alarm = .3 * room_speed;
+	alarm = .3 * game_get_speed(gamespeed_fps); 
 	if alarm[0] > 0 {
 	velocidadeV = -.4;
 	velocidadeH = .5 * direcao;

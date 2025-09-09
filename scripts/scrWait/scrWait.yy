@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scrWait",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "scrConfiguracoes",
-    "path": "folders/Scripts/scrConfiguracoes.yy",
+  "$GMScript":"v1",
+  "%Name":"scrWait",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrWait",
+  "parent":{
+    "name":"scrConfiguracoes",
+    "path":"folders/Scripts/scrConfiguracoes.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

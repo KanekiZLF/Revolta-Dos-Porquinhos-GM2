@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 global.currentRoom = room_get_name(room);
+global.amulet = clamp(global.amulet, 0, 3);
 
 if playSound {
 audio_play_sound(sndTelaInicial, 1, 1);

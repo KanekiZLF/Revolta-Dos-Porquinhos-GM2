@@ -40,5 +40,5 @@ if image_xscale = -1 {
 }
 
 if (room == TelaInicial) {
-	alarm[3] = 2 * room_speed;
+	alarm[3] = 2 * game_get_speed(gamespeed_fps); 
 }

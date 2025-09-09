@@ -4,7 +4,7 @@ estado = scrBombaIdle;
 
 bombIsOn = false;
 bombState = 0;
-bombTimer = 1 * room_speed; //<-- Deve se colocar room_speed para medir em SEGUNDOS e nao por QUADROS
+bombTimer = 1 * game_get_speed(gamespeed_fps); //<-- Deve se colocar room_speed para medir em SEGUNDOS e nao por QUADROS
 sprBomba = sprBomb_Off;
 objColisParede = objParede;
 velocidadeH = 0;

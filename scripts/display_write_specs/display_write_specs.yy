@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "display_write_specs",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "scrConfiguracoes",
-    "path": "folders/Scripts/scrConfiguracoes.yy",
+  "$GMScript":"v1",
+  "%Name":"display_write_specs",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"display_write_specs",
+  "parent":{
+    "name":"scrConfiguracoes",
+    "path":"folders/Scripts/scrConfiguracoes.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

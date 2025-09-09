@@ -27,5 +27,5 @@ crash = false;
 count = false;
 
 if room == TelaInicial && !podeDisparar {
-	alarm[3] = 4 * room_speed;
+	alarm[3] = 4 * game_get_speed(gamespeed_fps); 
 }

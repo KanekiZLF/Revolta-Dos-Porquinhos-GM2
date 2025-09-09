@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "sqTransicaoNew2_Events15",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "scrConfiguracoes",
-    "path": "folders/Scripts/scrConfiguracoes.yy",
+  "$GMScript":"v1",
+  "%Name":"sqTransicaoNew2_Events15",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sqTransicaoNew2_Events15",
+  "parent":{
+    "name":"scrConfiguracoes",
+    "path":"folders/Scripts/scrConfiguracoes.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

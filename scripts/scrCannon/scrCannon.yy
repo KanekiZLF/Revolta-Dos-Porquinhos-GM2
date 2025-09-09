@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scrCannon",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "scrItens",
-    "path": "folders/Scripts/scrItens.yy",
+  "$GMScript":"v1",
+  "%Name":"scrCannon",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrCannon",
+  "parent":{
+    "name":"scrItens",
+    "path":"folders/Scripts/scrItens.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

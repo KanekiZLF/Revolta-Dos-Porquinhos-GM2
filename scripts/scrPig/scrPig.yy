@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scrPig",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "scrPigs",
-    "path": "folders/Scripts/scrPigs.yy",
+  "$GMScript":"v1",
+  "%Name":"scrPig",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrPig",
+  "parent":{
+    "name":"scrPigs",
+    "path":"folders/Scripts/scrPigs.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

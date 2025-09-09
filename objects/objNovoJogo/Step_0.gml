@@ -15,7 +15,6 @@ if global.configOS == 2 {
 
 if (_mouse && global.menu && !global.opening && mouse_check_button_released(mb_left)) {
 	playSound = true;
-	showMe = false;
 	global.canSalve = true;
 	global.savesLoad = false;
 	global.saves = true;

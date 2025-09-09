@@ -3,7 +3,7 @@
 if global.opening && (global.configOS == 0 || global.configOS == 1 ) {
 	draw_set_font(fnTextos);
 	draw_set_color(c_white);
-	draw_set_valign(fa_center);
+	draw_set_valign(fa_middle);
 	draw_set_halign(fa_center);
 	draw_set_alpha(alpha);
 	scrDrawOutLine(centerX, y + 10, text, 2, c_black, 4, 10, 1000, scale, scale, 0);
@@ -14,7 +14,7 @@ if global.opening && (global.configOS == 0 || global.configOS == 1 ) {
 } else if global.opening && global.configOS == 2 {
 	draw_set_font(fnTextos);
 	draw_set_color(c_white);
-	draw_set_valign(fa_center);
+	draw_set_valign(fa_middle);
 	draw_set_halign(fa_center);
 	draw_set_alpha(alpha);
 	scrDrawOutLine(centerX, y + 10, text, 4, c_black, 4, 100, 1000, scale, scale, 0);

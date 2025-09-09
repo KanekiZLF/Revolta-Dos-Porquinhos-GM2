@@ -296,7 +296,7 @@ function scrPigCannon() {
 		
 		if (sprite_index == sprPigFosforo3) {
 			if scrFimAnimacao() {
-				alarm[2] = timerCannon * room_speed; // <-- Tempo para acender o canhao em segundos
+				alarm[2] = timerCannon * game_get_speed(gamespeed_fps);  // <-- Tempo para acender o canhao em segundos
 				if direc = 14 {
 					direc = 0;
 				}

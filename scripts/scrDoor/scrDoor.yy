@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scrDoor",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "scrItens",
-    "path": "folders/Scripts/scrItens.yy",
+  "$GMScript":"v1",
+  "%Name":"scrDoor",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrDoor",
+  "parent":{
+    "name":"scrItens",
+    "path":"folders/Scripts/scrItens.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -31,5 +31,5 @@ distPlayer = function() {
 }
 
 if room == TelaInicial {
-	alarm[2] = 3 * room_speed;
+	alarm[2] = 3 * game_get_speed(gamespeed_fps); 
 }

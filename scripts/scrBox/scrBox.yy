@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scrBox",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "scrItens",
-    "path": "folders/Scripts/scrItens.yy",
+  "$GMScript":"v1",
+  "%Name":"scrBox",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrBox",
+  "parent":{
+    "name":"scrItens",
+    "path":"folders/Scripts/scrItens.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

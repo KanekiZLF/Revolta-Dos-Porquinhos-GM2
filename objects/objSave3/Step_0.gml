@@ -50,7 +50,6 @@ if (_mouse && global.saves && mouse_check_button_released(mb_left)) {
 		global.controls = true;
 		room_goto_next();
 	}
-	showMe = false;
 	global.saves = false;
 }
 
