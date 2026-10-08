@@ -1,11 +1,13 @@
 /// @description Insert description here
-// You can write your code in this editor
+// You can write your code in this edito
+
+event_inherited()
 if !place_meeting(x, y + 1, objBox) {
 	scrCollision();
 } else if place_meeting(x, y + 1, objBox) {
 	
 	//Colisor X Caixa
-	if place_meeting(x + velocidadeH, y, objBox){
+	if place_meeting(x + velocidadeH, y, objBox) {
 		while !place_meeting(x + sign(velocidadeH), y, objBox){
 			x += sign(velocidadeH);
 	}
@@ -47,6 +49,8 @@ if (place_meeting(x + velocidadeH, y, objColisParede)) {
 
 if (place_meeting(x, y + 1, objPlayer)) {
 	if canDestroy {
+		scrFloat(x, y - 20, "+2", 1, 1, 0.4, 50, c_white, c_fuchsia, 1, 8, fnTextosSmall);
+		global.points += 2;
 		hit = true;
 	}
 }
@@ -61,3 +65,4 @@ if playSound {
 	audio_play_sound(sndBoxBroken, 1, 0);
 	playSound = false;
 }
+

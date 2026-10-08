@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-scrCollision();
+event_inherited();
 
+scrCollision();
 
 if dir {
 	x += -velocidade;

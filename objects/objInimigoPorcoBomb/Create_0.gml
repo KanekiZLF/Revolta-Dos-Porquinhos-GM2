@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 estado = scrPig2Move;
+event_inherited()
 
-objColisParede = objParede;
 velocidade = 1;
 velocidadeH = 0;
 velocidadeV = 0;
@@ -10,6 +10,7 @@ gravidade = .09;
 dead = false;
 hit = false;
 lifes = 2;
+points = 10;
 direc = 0;
 direcao = 1;
 walk = false;
@@ -21,6 +22,8 @@ playSound = false;
 hitSound = false;
 crash = false;
 count = false;
+objColisParede = layer_tilemap_get_id("Chao");
+
 
 distPlayer = function() {
 	var _player = collision_line(x, y - 10, x + vision * image_xscale, y - 10, objPlayer, false, true)

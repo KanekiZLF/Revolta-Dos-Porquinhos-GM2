@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sprPigJJump",
   "bboxMode":0,
   "bbox_bottom":27,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"bd8a4c2f-cc9f-41bd-9d85-3b232154d4b8","name":"bd8a4c2f-cc9f-41bd-9d85-3b232154d4b8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"bd8a4c2f-cc9f-41bd-9d85-3b232154d4b8","name":"bd8a4c2f-cc9f-41bd-9d85-3b232154d4b8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -22,7 +22,26 @@
     {"$GMImageLayer":"","%Name":"dd8d4901-0e3b-4a24-b9ad-c60c7446d297","blendMode":0,"displayName":"default","isLocked":false,"name":"dd8d4901-0e3b-4a24-b9ad-c60c7446d297","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sprPigJJump",
-  "nineSlice":null,
+  "nineSlice":{
+    "$GMNineSliceData":"",
+    "bottom":0,
+    "enabled":false,
+    "guideColour":[4294902015,4294902015,4294902015,4294902015,],
+    "highlightColour":1728023040,
+    "highlightStyle":0,
+    "left":0,
+    "resourceType":"GMNineSliceData",
+    "resourceVersion":"2.0",
+    "right":0,
+    "tileMode":[
+      0,
+      0,
+      0,
+      0,
+      0,
+    ],
+    "top":0,
+  },
   "origin":9,
   "parent":{
     "name":"sprPig",

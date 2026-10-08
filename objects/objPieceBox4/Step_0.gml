@@ -1,5 +1,7 @@
 /// @description Script de Gravidade
 // You can write your code in this editor
+event_inherited();
+
 scrCollision();
 
 if dir {

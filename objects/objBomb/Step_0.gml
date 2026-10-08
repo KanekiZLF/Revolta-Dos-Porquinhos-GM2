@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+event_inherited()
+
 if !place_meeting(x, y, objBox) {
 	scrCollision();
 }
@@ -60,6 +62,7 @@ if (push) {
 	velocidadeH =  velocPush * objPlayer.image_xscale;
 	velocidadeV = -1.5;
 	global.points += 3;
+	scrFloat(x, y - 20, "+3", 1, 1, 0.4, 50, c_white, c_fuchsia, 1, 8, fnTextosSmall);
 	push = false;
 }
 if playSound {
@@ -78,3 +81,12 @@ if bombState = 2 {
 	}
 }
 
+if (bombState < 2 && place_meeting(x, y, objPlataformas)) {
+    bombState = 2;
+    audio_stop_sound(sndWick);
+    sprite_index = sprBoom;
+    image_index = 0;
+    velocidadeH = 0;
+    velocidadeV = 0;
+    audio_play_sound(sndBoom, 2, 0);
+}

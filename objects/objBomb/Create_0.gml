@@ -6,7 +6,7 @@ bombIsOn = false;
 bombState = 0;
 bombTimer = 1 * game_get_speed(gamespeed_fps); //<-- Deve se colocar room_speed para medir em SEGUNDOS e nao por QUADROS
 sprBomba = sprBomb_Off;
-objColisParede = objParede;
+objColisParede = layer_tilemap_get_id("Chao");
 velocidadeH = 0;
 velocidadeV = 0;
 velocidade = 1;
@@ -14,3 +14,4 @@ gravidade = 0.09;
 push = false;
 velocPush = 1.5;
 playSound = false;
+

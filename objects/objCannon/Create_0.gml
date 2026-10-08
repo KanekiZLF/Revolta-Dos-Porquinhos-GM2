@@ -4,7 +4,7 @@ estado = scrCannon;
 velocidadeV = 0;
 velocidadeH = 0;
 gravidade = .09;
-objColisParede = objParede;
+objColisParede = layer_tilemap_get_id("Chao");
 
 sprCannon = sprCannonIdle;
 cannonState = 0;

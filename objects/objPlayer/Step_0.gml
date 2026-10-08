@@ -1,6 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 scrDirec();
+
+textPoints -= 0.25;
+alpha -= 0.01;
+
 if keyboard_check_pressed(ord("G")) {
 	global.lifes -= 1;
 }
@@ -29,9 +33,7 @@ if isAttacking {
 }
 
 //Bloqueia o pulo se estiver colidindo
-if (place_meeting(x, y + 1, objBlockMenu)) {
-	blockJump = true;
-}else if (place_meeting(x, y + 1, objBlockJump) && global.inimigosNumber <= 0) && velocidadeH = 0 {
+if (place_meeting(x, y + 1, objDoor) && global.inimigosNumber <= 0) && velocidadeH = 0 {
 	blockJump = true;
 } else {
 	blockJump = false;

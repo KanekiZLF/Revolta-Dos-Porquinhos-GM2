@@ -1,0 +1,1 @@
+objColisParede = layer_tilemap_get_id("Chao");

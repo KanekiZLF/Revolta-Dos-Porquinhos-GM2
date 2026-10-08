@@ -15,3 +15,6 @@ if alarm[0] > 0 && global.lifes >= 0 {
 else {
 	image_alpha = 1;
 }
+
+//draw_line(x - 14, y, x + 10, y); // Pés
+//draw_line(x - 14, y - 30, x + 10, y - 30); // Cabeça

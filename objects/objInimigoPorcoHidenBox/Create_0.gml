@@ -2,7 +2,8 @@
 // You can write your code in this editor
 estado = scrPig4Move;
 
-objColisParede = objParede;
+objColisParede = layer_tilemap_get_id("Chao");
+
 velocidade = 0;
 velocidadeH = 0;
 velocidadeV = 0;
@@ -10,6 +11,7 @@ gravidade = .09;
 dead = false;
 hit = false;
 lifes = 2;
+points = 15;
 direcao = 1;
 walk = false;
 dano = 1;

@@ -9,7 +9,7 @@
 if velocidade <= 0 {
 	dir = false;
 }*/
-
+event_inherited()
 
 //Colisao X
 	if place_meeting(x + velocidadeH, y, objColisParede)  {

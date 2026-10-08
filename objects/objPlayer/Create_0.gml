@@ -35,7 +35,13 @@ inimigos_atingidos = ds_list_create();
 moveOn = false;
 view_zoom=1;
 view_max_zoom=10;
-objColisParede = objParede;
+
+escalaX = .1;
+escalaY = .1;
+textPoints = 1;
+alpha = 1;
+
+objColisParede = layer_tilemap_get_id("Chao");
 
 if !global.transicao {
 	layer_sequence_create("Transicao", objPlayer.x, objPlayer.y, sqTransicaoIn)

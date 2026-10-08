@@ -1,0 +1,1 @@
+objColisParede = objPlataformas;

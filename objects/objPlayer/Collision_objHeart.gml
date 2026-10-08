@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 if !isAttacking {
+	global.points += 50;
+	scrFloat(x, y - 20, "+50", 1, 1, 0.4, 50, c_white, c_fuchsia, 1, 8, fnTextosSmall);
 	global.lifes++;
 	objLifesHit.direc--;
 	playSoundLife = true;

@@ -1,15 +1,17 @@
 {
-  "$GMSound":"",
+  "$GMSound":"v2",
   "%Name":"sndMenu_Sound_Error",
   "audioGroupId":{
     "name":"sndMenu",
     "path":"audiogroups/sndMenu",
   },
   "bitDepth":1,
-  "bitRate":128,
+  "channelFormat":0,
   "compression":0,
+  "compressionQuality":4,
   "conversionMode":0,
   "duration":0.5,
+  "exportDir":"",
   "name":"sndMenu_Sound_Error",
   "parent":{
     "name":"sndMenu",
@@ -20,6 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"sndMenu_Sound_Error.wav",
-  "type":0,
   "volume":1.0,
 }

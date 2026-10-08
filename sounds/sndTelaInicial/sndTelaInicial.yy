@@ -1,15 +1,17 @@
 {
-  "$GMSound":"",
+  "$GMSound":"v2",
   "%Name":"sndTelaInicial",
   "audioGroupId":{
     "name":"Ambiente",
     "path":"audiogroups/Ambiente",
   },
   "bitDepth":1,
-  "bitRate":128,
+  "channelFormat":0,
   "compression":0,
+  "compressionQuality":4,
   "conversionMode":0,
   "duration":112.22205,
+  "exportDir":"",
   "name":"sndTelaInicial",
   "parent":{
     "name":"Sons",
@@ -20,6 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"sndTelaInicial.mp3",
-  "type":0,
   "volume":1.0,
 }

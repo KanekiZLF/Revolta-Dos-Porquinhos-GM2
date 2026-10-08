@@ -8,5 +8,5 @@ var _y = (yy - _cy) * escalaY;
 
 draw_set_font(fnDano);
 draw_set_alpha(alpha);
-draw_text_colour_outline(_x, _y - 40, dano, 4, c_black, 8, 100, 100);
+draw_text_colour(_x, _y, dano, c_lime, c_lime, c_green, c_green, alpha);
 draw_set_alpha(1);

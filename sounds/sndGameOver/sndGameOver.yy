@@ -1,15 +1,17 @@
 {
-  "$GMSound":"",
+  "$GMSound":"v2",
   "%Name":"sndGameOver",
   "audioGroupId":{
     "name":"Ambiente",
     "path":"audiogroups/Ambiente",
   },
   "bitDepth":1,
-  "bitRate":128,
+  "channelFormat":0,
   "compression":0,
+  "compressionQuality":4,
   "conversionMode":0,
   "duration":4.491905,
+  "exportDir":"",
   "name":"sndGameOver",
   "parent":{
     "name":"Sons",
@@ -20,6 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"sndGameOver.wav",
-  "type":0,
   "volume":1.0,
 }

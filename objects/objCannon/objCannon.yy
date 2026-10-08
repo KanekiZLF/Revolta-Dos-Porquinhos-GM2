@@ -31,8 +31,8 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"isBombCannon","filters":[],"listItems":[],"multiselect":false,"name":"isBombCannon","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
-    {"$GMObjectProperty":"v1","%Name":"vellCannon","filters":[],"listItems":[],"multiselect":false,"name":"vellCannon","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-2","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"isBombCannon","filters":[],"listItems":[],"multiselect":false,"name":"isBombCannon","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"vellCannon","filters":[],"listItems":[],"multiselect":false,"name":"vellCannon","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-2","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

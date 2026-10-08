@@ -4,7 +4,7 @@ velocidade = 1;
 velocidadeH = 0;
 velocidadeV = 0;
 gravidade = .09;
-objColisParede = objParede;
+objColisParede = layer_tilemap_get_id("Chao");
 
 alturaFrag = -0.8;
 dir = true;

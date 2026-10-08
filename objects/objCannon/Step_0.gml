@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+event_inherited()
 script_execute(estado);
 scrCollision();
 sprite_index = sprCannon;

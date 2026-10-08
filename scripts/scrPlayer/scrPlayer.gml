@@ -1,148 +1,145 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scrPlayer() {
-scrDirec();
+    scrDirec();
 
-//Colisao X
-	if place_meeting(x + velocidadeH, y, objColisParede) {
-	while !place_meeting(x + sign(velocidadeH), y, objColisParede) {
-		x += sign(velocidadeH);
-	}
-		velocidadeH = 0;
-	}
-	x += velocidadeH;
+    // ========================================
+    // COLISÃO X
+    // ========================================
+    if (place_meeting(x + velocidadeH, y, objColisParede)) {
+        while (!place_meeting(x + sign(velocidadeH), y, objColisParede)) {
+            x += sign(velocidadeH);
+        }
+        velocidadeH = 0;
+    }
+    x += velocidadeH;
 
-//Colisao Y
-	if place_meeting(x, y + velocidadeV, objColisParede) {
-		while !place_meeting(x, y + sign(velocidadeV), objColisParede) {
-			y += sign(velocidadeV); 
-	}
-		velocidadeV = 0;
-		isJumping = false;
-		isFall = false;
-		if place_meeting(x, y + 1, objColisParede) {
-			doubleJump = 0;
-		}
-	}
-	y += velocidadeV;
-	
-	if moveOn && !isDead {
-// Movimentação
-		direita = keyboard_check(ord("D"));
-		esquerda = keyboard_check(ord("A"));
-		if !blockJump {
-			cima = keyboard_check_pressed(ord("W"))
-		}
-	}
+    // ========================================
+    // COLISÃO Y (parede / chão sólido)
+    // ========================================
+    if (place_meeting(x, y + velocidadeV, objColisParede)) {
+        while (!place_meeting(x, y + sign(velocidadeV), objColisParede)) {
+            y += sign(velocidadeV);
+        }
+        velocidadeV = 0;
+        isJumping = false;
+        isFall    = false;
+        if (place_meeting(x, y + 1, objColisParede)) {
+            doubleJump = 0;
+        }
+    }
 
-velocidadeH = (direita - esquerda) * velocidade;
-//Gravidade
-	if !place_meeting(x, y + 1, objColisParede) {
-		velocidadeV += gravidade;
-	}
-	
-//Empurra durante um determinado tempo
-	if alarm[1] > 0 {
-		velocidadeH = lengthdir_x(3, empurrarDir);
-	} 
-//Caso não esteja atacando, vai definir as sprites, se não, ele ignora essa parte
-	if !isAttacking || !isDead {	
-//Jump, Double Jump, Pulo, Pulo Duplo
-	if cima && doubleJump < 2 {
-		playSoundJump = true;
-		doubleJump += 1;
-		velocidadeV = alturaPulo;
-		isJumping = true;
-	}
-// Define as Direc para selecionar as Sprites
-//Define a Sprite Parado
-	if velocidadeH = 0 {
-		if direc = 2 || direc = 8 {
-			direc = 0; //<-- Idle Direita
-		}
-		
-		if direc = 3 || direc = 9 {
-			direc = 1; //<-- Idle Esquerda
-		}
-	}
+    // ========================================
+    // COLISÃO PLATAFORMAS ONE-WAY
+    // ========================================
+    var _landedOnPlatform = false;
+    var _dropKey = keyboard_check(ord("S"));
 
-//Define sprite de andando
-	if velocidadeH != 0 && !isJumping{
-		if direita {
-			direc = 2; //<-- Run Direita
-		}
-	
-		if esquerda {
-			direc = 3; //<-- Run Esquerda
-		}
-	}
+    if (velocidadeV >= 0 && !_dropKey) {
+        var _offsetY = bbox_bottom - y;                 // distância até o "pé"
+        // max(velocidadeV, 1): garante detecção mesmo parado (V = 0)
+        var _plat = instance_place(x, y + max(velocidadeV, 1), objPlataformas);
 
-//Define se esta caindo ou não
-	if velocidadeV >= 0.03 {
-		isFall = true;
-	}
+        if (_plat && bbox_bottom <= _plat.bbox_top + 1) {
+            // Pousa em cima da plataforma
+            y = _plat.bbox_top - _offsetY;
+            velocidadeV = 0;
+            isJumping   = false;
+            isFall      = false;
+            doubleJump  = 0;
+            _landedOnPlatform = true;
+        }
+    }
 
-//Define a sprite do FALL, caindo
-	if isFall {
-		if direita || direc = 0 || direc = 2 || direc = 6 {
-			direc = 8; //<-- Fall Direita
-		}
-		
-		if esquerda || direc = 1 || direc = 3 || direc = 7 {
-			direc = 9; //<-- Fall Esquerda
-		}
-		
-//Sobe ao pular na cabeça do inimigo
-		var _inimigo = instance_place(x, y + 1, objEntidade)
-		
-		if _inimigo && !_inimigo.crash {
-			velocidadeV = puloInimigo;
-			_inimigo.hit = true;
-			_inimigo.alarm[0] = 10;
-			_inimigo.velocidade = 0;
-			_inimigo.velocidadeH = 0;
-			_inimigo.direcao = 0;
-			_inimigo.crash = true;
-			scrCollision();
-		}
-	}
+    y += velocidadeV;
 
+    if moveOn && !isDead {
+        direita  = keyboard_check(ord("D"));
+        esquerda = keyboard_check(ord("A"));
+        if !blockJump {
+            cima = keyboard_check_pressed(ord("W"));
+        }
+    }
 
-//Define a sprite do pulo e verifica o fall
-	if isJumping && !isFall {
-		if direita || direc = 0 || direc = 2 {
-			direc = 6;
-		}
-		
-		if esquerda || direc = 1 || direc = 3 {
-			direc = 7;
-			}
-		}
-	}
+    velocidadeH = (direita - esquerda) * velocidade;
 
+    // ========================================
+    // GRAVIDADE
+    // ========================================
+    // Só aplica gravidade se NÃO está no chão E NÃO está numa plataforma.
+    var _onGround = _landedOnPlatform || place_meeting(x, y + 1, objColisParede);
+    if (!_onGround) {
+        velocidadeV += gravidade;
+    }
 
-	 if isAttacking && !isJumping && !isFall && !isDead {
-//Define sprite de atacando 
-		if direita || direc = 0 || direc = 2 {
-			direc = 4;
-		}
-		
-		if esquerda || direc = 1 || direc = 3 {
-			direc = 5;		
-		}
-		estado = scrAtacando;
-	}
+    // Empurra durante um determinado tempo
+    if alarm[1] > 0 {
+        velocidadeH = lengthdir_x(3, empurrarDir);
+    }
 
-//Define as sprites de morto
-	if isDead {
-		if direc = 0 || direc = 2 || direc = 4 || direc = 6 || direc = 8 {
-			direc = 14; //<-- Dead Direita
-		}
-		
-		if direc = 1 || direc = 3 || direc = 5 || direc = 7 || direc = 9 {
-			direc = 15; //<-- Dead Esquerda
-		}
-	}
+    // Caso não esteja atacando, vai definir as sprites
+    if !isAttacking || !isDead {
+
+        // Jump / Double Jump
+        if cima && doubleJump < 2 {
+            playSoundJump = true;
+            doubleJump += 1;
+            velocidadeV = alturaPulo;
+            isJumping = true;
+        }
+
+        // Idle
+        if velocidadeH = 0 {
+            if direc = 2 || direc = 8 { direc = 0; }
+            if direc = 3 || direc = 9 { direc = 1; }
+        }
+
+        // Run
+        if velocidadeH != 0 && !isJumping {
+            if direita  { direc = 2; }
+            if esquerda { direc = 3; }
+        }
+
+        // Fall
+        if velocidadeV >= 0.03 { isFall = true; }
+
+        if isFall {
+            if direita || direc = 0 || direc = 2 || direc = 6 { direc = 8; }
+            if esquerda || direc = 1 || direc = 3 || direc = 7 { direc = 9; }
+
+            // Pular na cabeça do inimigo
+            var _inimigo = instance_place(x, y + 1, objEntidade)
+            if _inimigo && !_inimigo.crash {
+                velocidadeV = puloInimigo;
+                _inimigo.hit = true;
+                _inimigo.alarm[0] = 10;
+                _inimigo.velocidade = 0;
+                _inimigo.velocidadeH = 0;
+                _inimigo.direcao = 0;
+                _inimigo.crash = true;
+                scrCollision();
+            }
+        }
+
+        // Jump sprite
+        if isJumping && !isFall {
+            if direita  || direc = 0 || direc = 2 { direc = 6; }
+            if esquerda || direc = 1 || direc = 3 { direc = 7; }
+        }
+    }
+
+    // Ataque
+    if isAttacking && !isJumping && !isFall && !isDead {
+        if direita  || direc = 0 || direc = 2 { direc = 4; }
+        if esquerda || direc = 1 || direc = 3 { direc = 5; }
+        estado = scrAtacando;
+    }
+
+    // Morto
+    if isDead {
+        if direc = 0 || direc = 2 || direc = 4 || direc = 6 || direc = 8 { direc = 14; }
+        if direc = 1 || direc = 3 || direc = 5 || direc = 7 || direc = 9 { direc = 15; }
+    }
 }
 
 
@@ -222,11 +219,9 @@ function scrDirec(){
 			if scrFimAnimacao(){
 				direc = 0;
 				tomarDano = true;
-				if !place_meeting(x, y, objBlockMenu) {
-					global.controls = true;
-				}
 				moveOn = true;
 				alturaPulo = -5;
+				global.controls = true;
 			}
 		break;
 		

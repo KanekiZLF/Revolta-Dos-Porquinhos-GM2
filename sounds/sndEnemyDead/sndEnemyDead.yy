@@ -1,15 +1,17 @@
 {
-  "$GMSound":"",
+  "$GMSound":"v2",
   "%Name":"sndEnemyDead",
   "audioGroupId":{
     "name":"Efeitos_Sonoros",
     "path":"audiogroups/Efeitos_Sonoros",
   },
   "bitDepth":1,
-  "bitRate":112,
+  "channelFormat":0,
   "compression":0,
+  "compressionQuality":3,
   "conversionMode":0,
   "duration":0.336,
+  "exportDir":"",
   "name":"sndEnemyDead",
   "parent":{
     "name":"Sons",
@@ -20,6 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":48000,
   "soundFile":"sndEnemyDead.mp3",
-  "type":0,
   "volume":1.0,
 }

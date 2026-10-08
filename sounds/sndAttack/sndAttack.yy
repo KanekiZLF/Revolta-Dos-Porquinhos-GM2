@@ -1,15 +1,17 @@
 {
-  "$GMSound":"",
+  "$GMSound":"v2",
   "%Name":"sndAttack",
   "audioGroupId":{
     "name":"Efeitos_Sonoros",
     "path":"audiogroups/Efeitos_Sonoros",
   },
   "bitDepth":1,
-  "bitRate":128,
+  "channelFormat":0,
   "compression":1,
+  "compressionQuality":4,
   "conversionMode":0,
   "duration":0.312,
+  "exportDir":"",
   "name":"sndAttack",
   "parent":{
     "name":"Sons",
@@ -20,6 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"sndAttack.mp3",
-  "type":0,
   "volume":1.0,
 }

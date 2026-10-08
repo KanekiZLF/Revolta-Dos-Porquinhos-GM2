@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrFloat",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrFloat",
+  "parent":{
+    "name":"scrConfiguracoes",
+    "path":"folders/Scripts/scrConfiguracoes.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

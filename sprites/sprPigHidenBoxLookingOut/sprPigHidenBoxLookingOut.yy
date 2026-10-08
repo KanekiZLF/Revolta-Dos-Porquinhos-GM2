@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sprPigHidenBoxLookingOut",
   "bboxMode":0,
   "bbox_bottom":17,
@@ -12,9 +12,9 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a284fdac-bbeb-4e7c-87ac-ac0a694ce854","name":"a284fdac-bbeb-4e7c-87ac-ac0a694ce854","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"f2d7b7fd-25ac-493d-b522-334914ce5cd9","name":"f2d7b7fd-25ac-493d-b522-334914ce5cd9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"27032d92-01d4-4ec5-ae92-66c0b34ccb58","name":"27032d92-01d4-4ec5-ae92-66c0b34ccb58","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a284fdac-bbeb-4e7c-87ac-ac0a694ce854","name":"a284fdac-bbeb-4e7c-87ac-ac0a694ce854","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f2d7b7fd-25ac-493d-b522-334914ce5cd9","name":"f2d7b7fd-25ac-493d-b522-334914ce5cd9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"27032d92-01d4-4ec5-ae92-66c0b34ccb58","name":"27032d92-01d4-4ec5-ae92-66c0b34ccb58","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -72,15 +72,9 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a284fdac-bbeb-4e7c-87ac-ac0a694ce854","path":"sprites/sprPigHidenBoxLookingOut/sprPigHidenBoxLookingOut.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"7e30397a-52c6-4b25-ad9d-554a5d269b5c","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f2d7b7fd-25ac-493d-b522-334914ce5cd9","path":"sprites/sprPigHidenBoxLookingOut/sprPigHidenBoxLookingOut.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c308f6a9-2728-453f-80ff-083db564d58a","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"27032d92-01d4-4ec5-ae92-66c0b34ccb58","path":"sprites/sprPigHidenBoxLookingOut/sprPigHidenBoxLookingOut.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c1e2beaf-fe8b-4177-8939-33cccf46d656","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"a284fdac-bbeb-4e7c-87ac-ac0a694ce854","path":"sprites/sprPigHidenBoxLookingOut/sprPigHidenBoxLookingOut.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"7e30397a-52c6-4b25-ad9d-554a5d269b5c","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"f2d7b7fd-25ac-493d-b522-334914ce5cd9","path":"sprites/sprPigHidenBoxLookingOut/sprPigHidenBoxLookingOut.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"c308f6a9-2728-453f-80ff-083db564d58a","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"27032d92-01d4-4ec5-ae92-66c0b34ccb58","path":"sprites/sprPigHidenBoxLookingOut/sprPigHidenBoxLookingOut.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"c1e2beaf-fe8b-4177-8939-33cccf46d656","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

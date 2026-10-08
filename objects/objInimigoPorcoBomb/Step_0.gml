@@ -48,6 +48,8 @@ if direc = 10 || 11 {
 }
 
 if lifes = 0 && count {
+	scrFloat(x, y - 20, "+" + string(points), 1, 1, 0.4, 50, c_white, c_fuchsia, 1, 8, fnTextosSmall);
+	global.points += points;
 	global.inimigosNumber--;
 	count = false;
 }

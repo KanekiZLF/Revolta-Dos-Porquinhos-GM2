@@ -9,6 +9,6 @@ velocidade = 1;
 velocidadeH = 0;
 velocidadeV = 0;
 gravidade = 0.09;
-objColisParede = objParede;
+objColisParede = layer_tilemap_get_id("Chao");
 thisBomb = false;
 playSound = false;

@@ -12,7 +12,10 @@
     "name":"objBoxFrags",
     "path":"folders/Objetos/objItens/objBoxFrags.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"objFragPai",
+    "path":"objects/objFragPai/objFragPai.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
